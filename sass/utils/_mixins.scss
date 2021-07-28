@@ -1,0 +1,20 @@
+@import "../utils/variables";
+
+
+@mixin box-shadow-lighter {
+    box-shadow: 2px 2px 12px #afaeb3;
+}
+
+@mixin box-shadow-darker {
+    box-shadow: 4px 4px 14px #757479
+}
+
+@mixin linear-gradient {
+    background: linear-gradient($color-secondary,$color-primary);
+}
+
+@mixin tablet {
+    @media screen and (min-width: 768px) {
+        @content;  
+    } 
+}
