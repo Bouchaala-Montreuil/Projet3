@@ -26,7 +26,7 @@
     margin: 10px;
     font-weight: bold;
 
-    &__btn:focus {
+    &__btn:hover {
         @include linear-gradient;
         background-clip: border-box;
         background-clip: text;
