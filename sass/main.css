@@ -68,7 +68,7 @@ p {
   font-weight: bold;
 }
 
-.like__btn:focus {
+.like__btn:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#fd70d5), to(#7300ff));
   background: linear-gradient(#fd70d5, #7300ff);
   background-clip: border-box;
