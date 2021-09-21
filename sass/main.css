@@ -756,8 +756,8 @@ p {
 .meal .checkbox {
   width: 0;
   background: #91ddca;
-  -webkit-transition: 2s;
-  transition: 2s;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
   position: relative;
 }
 
@@ -871,8 +871,8 @@ p {
 
 @-webkit-keyframes check-rotateback {
   0% {
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
+    -webkit-transform: rotate(-720deg);
+            transform: rotate(-720deg);
   }
   100% {
     -webkit-transform: rotate(0deg);
@@ -882,8 +882,8 @@ p {
 
 @keyframes check-rotateback {
   0% {
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
+    -webkit-transform: rotate(-720deg);
+            transform: rotate(-720deg);
   }
   100% {
     -webkit-transform: rotate(0deg);
