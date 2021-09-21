@@ -708,8 +708,13 @@ p {
 }
 
 .meal__description:hover .btn-check {
-  -webkit-animation: check-rotate ease 0.3s;
-          animation: check-rotate ease 0.3s;
+  -webkit-animation: check-rotate ease-in-out 1s;
+          animation: check-rotate ease-in-out 1s;
+}
+
+.meal__description:not(:hover) .btn-check {
+  -webkit-animation: check-rotateback ease-in-out 1s;
+          animation: check-rotateback ease-in-out 1s;
 }
 
 @media (min-width: 600px) {
@@ -751,8 +756,8 @@ p {
 .meal .checkbox {
   width: 0;
   background: #91ddca;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 2s;
+  transition: 2s;
   position: relative;
 }
 
@@ -844,24 +849,8 @@ p {
 
 @-webkit-keyframes check-rotate {
   0% {
-    -webkit-transform: rotate(100deg);
-            transform: rotate(100deg);
-  }
-  20% {
-    -webkit-transform: rotate(140deg);
-            transform: rotate(140deg);
-  }
-  40% {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
-  60% {
-    -webkit-transform: rotate(240deg);
-            transform: rotate(240deg);
-  }
-  80% {
-    -webkit-transform: rotate(280deg);
-            transform: rotate(280deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   100% {
     -webkit-transform: rotate(360deg);
@@ -871,28 +860,34 @@ p {
 
 @keyframes check-rotate {
   0% {
-    -webkit-transform: rotate(100deg);
-            transform: rotate(100deg);
-  }
-  20% {
-    -webkit-transform: rotate(140deg);
-            transform: rotate(140deg);
-  }
-  40% {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
-  60% {
-    -webkit-transform: rotate(240deg);
-            transform: rotate(240deg);
-  }
-  80% {
-    -webkit-transform: rotate(280deg);
-            transform: rotate(280deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes check-rotateback {
+  0% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes check-rotateback {
+  0% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
 }
 /*# sourceMappingURL=main.css.map */
